@@ -6,7 +6,7 @@ Claude picked up that I had not considered what happens in a tie! This is an iss
 
 Claude suggested adding the code to draw_move (function for computer to make move) or enter_move (for user), however both of these functions call the make_list_of_free_fields so I think my method is acceptable. 
 
-Interesting, we both suggested the same code as the fix
+Interestingly, we both suggested the same code as the fix
 Mine:
     if len(free_fields) == 0:
             print("Game is a tie. Game over!")
@@ -16,7 +16,9 @@ Claude's:
         print("It's a draw! Game over.")
         sys.exit(0)
         
-        ## Refactoring victory_for function
+        
+        
+## Refactoring victory_for function
 It picked up the very repetative code in the victory_for function. I wasn't happy with this code as it need seem very clunky and not scalable, so I'm glad Claude was able to pick this up and suggest a solution. 
 
 
